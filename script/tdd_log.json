@@ -134,9 +134,31 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cc4515930c61e8c57b9c5946ce9eda0f96d486c4",
     "commitName": "feat: Se agrego el descuento para el segundo y tercer caso",
     "commitTimestamp": 1788926206144,
     "testId": 5
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 3,
+    "numTotalTests": 13,
+    "timestamp": 1788926233832,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 0,
+    "numTotalTests": 13,
+    "timestamp": 1788926261451,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Se agrego el descuento para los demas casos",
+    "commitTimestamp": 1788926303496,
+    "testId": 6
   }
 ]
