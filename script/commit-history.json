@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-09T03:19:51.000Z",
+      "message": "feat: Calculo del precio neto",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 6429,
+      "additions": 3018,
+      "deletions": 3411,
+      "date": "2026-09-09"
+    },
+    "coverage": 60,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
