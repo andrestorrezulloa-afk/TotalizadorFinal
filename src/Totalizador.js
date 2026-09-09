@@ -21,3 +21,8 @@ export function calcularImpuesto(precioNeto, estado) {
   const tasa = impuestosPorEstado[estado] || 0;
   return Number((precioNeto * tasa).toFixed(2));
 }
+export function calcularDescuento(precioNeto) {
+  let porcentaje = 0;
+  const descuento = precioNeto * porcentaje;
+  return Number(descuento.toFixed(2)); // Redondea a 2 decimales y lo convierte a número
+}

@@ -1,4 +1,4 @@
-import { calcularPrecioNeto, calcularImpuesto} from "./Totalizador.js";
+import { calcularPrecioNeto, calcularImpuesto, calcularDescuento} from "./Totalizador.js";
 
 //precio neto
 describe("Totalizador - Precio Neto", () => {
@@ -28,4 +28,11 @@ describe("Totalizador - Impuesto", () => {
   it("debería retornar 'Estado inválido' si el código de estado no existe en la lista", () => {
     expect(calcularImpuesto(100, "XX")).toEqual("Estado inválido");
   });
+});
+// Descuentos 
+describe("Totalizador - Descuento", () => {
+  it("deberia calcular 0 de descuento si el monto es menor a 1000", () => {
+    expect(calcularDescuento(500)).toEqual(0);
+  });
+
 });

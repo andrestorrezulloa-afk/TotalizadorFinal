@@ -98,9 +98,23 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8083797b51c08f003218457bc8a5c4d7d55cba48",
     "commitName": "feat: Se agrego a los demas estados para el calculo de impuestos",
     "commitTimestamp": 1788924929793,
     "testId": 3
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 1,
+    "numTotalTests": 8,
+    "timestamp": 1788925507842,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Se agrego el descuento para el primer caso",
+    "commitTimestamp": 1788926083646,
+    "testId": 4
   }
 ]

@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8083797b51c08f003218457bc8a5c4d7d55cba48",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-09T03:35:28.000Z",
       "message": "feat: Se agrego a los demas estados para el calculo de impuestos",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/8083797b51c08f003218457bc8a5c4d7d55cba48"
     },
     "stats": {
       "total": 19,
@@ -72,6 +72,25 @@
     },
     "coverage": 100,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-09T03:54:42.000Z",
+      "message": "feat: Se agrego el descuento para el primer caso",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 22,
+      "deletions": 5,
+      "date": "2026-09-09"
+    },
+    "coverage": 100,
+    "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
   }

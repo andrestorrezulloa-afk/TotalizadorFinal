@@ -1,4 +1,4 @@
-import { calcularPrecioNeto, calcularImpuesto } from "./Totalizador.js";
+import { calcularPrecioNeto, calcularImpuesto, calcularDescuento } from "./Totalizador.js";
 
 const cantidadInput = document.querySelector("#cantidad");
 const precioInput = document.querySelector("#precio");
@@ -20,17 +20,22 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  const impuesto = calcularImpuesto(precioNeto, estado);
+  const descuento = calcularDescuento(precioNeto);
+  const precioConDescuento = precioNeto - descuento;
+  
+  
+  const impuesto = calcularImpuesto(precioConDescuento, estado);
 
   if (typeof impuesto === "string") {
     div.innerHTML = `<p style="color: red;">${impuesto}</p>`;
     return;
   }
 
-  const total = Number((precioNeto + impuesto).toFixed(2));
+  const total = Number((precioConDescuento + impuesto).toFixed(2));
 
   div.innerHTML = `
     <p><strong>Precio neto (${cantidad} x $${precio}):</strong> $${precioNeto}</p>
+    <p><strong>Descuento:</strong> -$${descuento}</p>
     <p><strong>Impuesto (${estado}):</strong> +$${impuesto}</p>
     <hr>
     <p><strong>Precio Total:</strong> $${total}</p>
