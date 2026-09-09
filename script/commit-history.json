@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "12900fc70c7863ad5fd77e3aef280fa806313103",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-09T03:22:24.000Z",
       "message": "test:Se agrego 2 test mas para verificar las reglas de negocios al precio neto",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/12900fc70c7863ad5fd77e3aef280fa806313103"
     },
     "stats": {
       "total": 6,
@@ -34,6 +34,25 @@
     },
     "coverage": 100,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-09T03:30:54.000Z",
+      "message": "feat: Se agrego el impuesto aplicado para un estado",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 47,
+      "additions": 44,
+      "deletions": 3,
+      "date": "2026-09-09"
+    },
+    "coverage": 90,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -1,4 +1,4 @@
-import { calcularPrecioNeto} from "./Totalizador.js";
+import { calcularPrecioNeto, calcularImpuesto} from "./Totalizador.js";
 
 describe("Totalizador - Precio Neto", () => {
   it("deberia calcular el precio neto multiplicando la cantidad por el precio", () => {
@@ -10,4 +10,13 @@ describe("Totalizador - Precio Neto", () => {
   it("debería retornar 'Precio inválido' si el precio es negativo", () => {
     expect(calcularPrecioNeto(3, -10)).toEqual("Precio inválido");
   });
+});
+
+//Impuestos
+describe("Totalizador - Impuesto", () => {
+  it("deberia calcular el monto del impuesto para el estado UT (6.65%)", () => {
+    expect(calcularImpuesto(100, "UT")).toEqual(6.65);
+  });
+
+  
 });

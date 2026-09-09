@@ -38,9 +38,39 @@
     "testId": 1
   },
   {
-    "commitId": "HEAD",
+    "commitId": "12900fc70c7863ad5fd77e3aef280fa806313103",
     "commitName": "test:Se agrego 2 test mas para verificar las reglas de negocios al precio neto",
     "commitTimestamp": 1788924145132,
     "testId": 1
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 1,
+    "numTotalTests": 4,
+    "timestamp": 1788924238246,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 1,
+    "numTotalTests": 4,
+    "timestamp": 1788924318425,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 0,
+    "numTotalTests": 4,
+    "timestamp": 1788924338447,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Se agrego el impuesto aplicado para un estado",
+    "commitTimestamp": 1788924655202,
+    "testId": 2
   }
 ]
