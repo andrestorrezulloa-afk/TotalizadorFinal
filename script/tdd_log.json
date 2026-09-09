@@ -68,9 +68,39 @@
     "testId": 2
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5e3a791ffcc6b37d340782286e7c044bafa45d32",
     "commitName": "feat: Se agrego el impuesto aplicado para un estado",
     "commitTimestamp": 1788924655202,
     "testId": 2
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 2,
+    "numTotalTests": 7,
+    "timestamp": 1788924728455,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 2,
+    "numTotalTests": 7,
+    "timestamp": 1788924836219,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1788924854352,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Se agrego a los demas estados para el calculo de impuestos",
+    "commitTimestamp": 1788924929793,
+    "testId": 3
   }
 ]

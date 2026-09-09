@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5e3a791ffcc6b37d340782286e7c044bafa45d32",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-09T03:30:54.000Z",
       "message": "feat: Se agrego el impuesto aplicado para un estado",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/5e3a791ffcc6b37d340782286e7c044bafa45d32"
     },
     "stats": {
       "total": 47,
@@ -53,6 +53,25 @@
     },
     "coverage": 90,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-09T03:35:28.000Z",
+      "message": "feat: Se agrego a los demas estados para el calculo de impuestos",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 18,
+      "deletions": 1,
+      "date": "2026-09-09"
+    },
+    "coverage": 100,
+    "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
   }
