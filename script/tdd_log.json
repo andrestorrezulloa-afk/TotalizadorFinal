@@ -16,9 +16,31 @@
     "testId": 0
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e6ce1cf69262bfc825c9396266b2ce16d9a4288a",
     "commitName": "feat: Calculo del precio neto",
     "commitTimestamp": 1788923992341,
     "testId": 0
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 2,
+    "numTotalTests": 3,
+    "timestamp": 1788924076044,
+    "success": false,
+    "testId": 1
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1788924082576,
+    "success": true,
+    "testId": 1
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test:Se agrego 2 test mas para verificar las reglas de negocios al precio neto",
+    "commitTimestamp": 1788924145132,
+    "testId": 1
   }
 ]

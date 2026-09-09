@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "e6ce1cf69262bfc825c9396266b2ce16d9a4288a",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-09T03:19:51.000Z",
       "message": "feat: Calculo del precio neto",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/e6ce1cf69262bfc825c9396266b2ce16d9a4288a"
     },
     "stats": {
       "total": 6429,
@@ -15,6 +15,25 @@
     },
     "coverage": 60,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-09T03:22:24.000Z",
+      "message": "test:Se agrego 2 test mas para verificar las reglas de negocios al precio neto",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 100,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }
