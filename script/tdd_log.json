@@ -388,9 +388,31 @@
     "testId": 18
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e08f95df2e55cd174c78a0a0fe38ada58bc44e7f",
     "commitName": "feat: Se agrego el coste de envio para el rango 41-80",
     "commitTimestamp": 1789011851553,
     "testId": 18
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1789011881258,
+    "success": false,
+    "testId": 19
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 0,
+    "numTotalTests": 24,
+    "timestamp": 1789011898660,
+    "success": true,
+    "testId": 19
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Se agrego el coste de envio para el rango 81-100",
+    "commitTimestamp": 1789011924167,
+    "testId": 19
   }
 ]
