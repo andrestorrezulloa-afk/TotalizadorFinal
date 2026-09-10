@@ -20,11 +20,12 @@ form.addEventListener("submit", (event) => {
   const categoria = categoriaSelect.value; 
 
   const precioNeto = calcularPrecioNeto(cantidad, precio);
-
   if (typeof precioNeto === "string") {
     div.innerHTML = `<p style="color: red;">${precioNeto}</p>`;
     return;
   }
+  
+  
   
   const descuento = calcularDescuento(precioNeto, categoria);
   const precioConDescuento = precioNeto - descuento;
@@ -36,8 +37,12 @@ form.addEventListener("submit", (event) => {
   }
 
   const costoEnvio = calcularCostoEnvio(cantidad, peso);
+  if (typeof costoEnvio === "string") {
+    div.innerHTML = `<p style="color: red;">${costoEnvio}</p>`;
+    return;
+  }
   const total = Number((precioConDescuento + impuesto + costoEnvio).toFixed(2));
-
+  
   div.innerHTML = `
     <p><strong>Categoría:</strong> ${categoria}</p>
     <p><strong>Precio neto (${cantidad} x $${precio}):</strong> $${precioNeto}</p>

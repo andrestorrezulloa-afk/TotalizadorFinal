@@ -460,9 +460,55 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "910969cee99b740a378431d28476e393e6f56f03",
     "commitName": "fix: Se arreglo el vaciar el peso al cancelar la compra",
     "commitTimestamp": 1789012183325,
     "testId": 22
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 2,
+    "numTotalTests": 27,
+    "timestamp": 1789012659868,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 1,
+    "numTotalTests": 27,
+    "timestamp": 1789012668228,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 1,
+    "numTotalTests": 27,
+    "timestamp": 1789012741844,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 1,
+    "numTotalTests": 27,
+    "timestamp": 1789012815252,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 0,
+    "numTotalTests": 27,
+    "timestamp": 1789012885112,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Se agrego logica de negocios a peso",
+    "commitTimestamp": 1789013189872,
+    "testId": 23
   }
 ]

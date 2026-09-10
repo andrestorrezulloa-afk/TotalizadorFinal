@@ -71,7 +71,6 @@ export function cancelarCompra(cantidadInput, precioInput, estadoSelect, categor
   categoriaSelect.value = "Varios";
   pesoInput.value = "";
   resultadoDiv.innerHTML = "";
-
 }
 
 export function confirmarCompra() {
@@ -79,6 +78,9 @@ export function confirmarCompra() {
 }
 
 export function calcularCostoEnvio(cantidad, pesoVolumetrico) {
+  if (pesoVolumetrico < 0) {
+    return "Peso volumétrico inválido";
+  }
   if (pesoVolumetrico <= 10) return 0;
   if (pesoVolumetrico <= 20) return cantidad * 3.5;
   if (pesoVolumetrico <= 40) return cantidad * 5;

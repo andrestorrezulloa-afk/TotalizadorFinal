@@ -82,12 +82,13 @@ describe("Totalizador - Cancelar Compra", () => {
     const estadoSelect = { value: "CA" };
     const categoriaSelect = { value: "Alimentos" };
     const resultadoDiv = { innerHTML: "<p>Total: $500</p>" };
- 
-    cancelarCompra(cantidadInput, precioInput, estadoSelect, categoriaSelect, resultadoDiv);
+    const pesoInput = { value: "15" };
+    cancelarCompra(cantidadInput, precioInput, estadoSelect, categoriaSelect, pesoInput, resultadoDiv);
 
     expect(cantidadInput.value).toEqual("");
     expect(precioInput.value).toEqual("");
     expect(estadoSelect.value).toEqual("CA"); 
+    expect(pesoInput.value).toEqual("");
     expect(categoriaSelect.value).toEqual("Varios");
     expect(resultadoDiv.innerHTML).toEqual("");
   });
@@ -123,5 +124,8 @@ describe("Totalizador - Costo de Envío", () => {
   });
   it("deberia calcular $9 por unidad de envio si el peso volumétrico es mayor a 200", () => {
     expect(calcularCostoEnvio(2, 250)).toEqual(18);
+  });
+  it("debería retornar 'Peso volumétrico inválido' si el peso volumétrico es menor a 0", () => {
+    expect(calcularCostoEnvio(2, -1)).toEqual("Peso volumétrico inválido");
   });
 });
