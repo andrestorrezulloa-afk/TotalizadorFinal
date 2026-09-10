@@ -32,6 +32,7 @@ describe("Totalizador - Impuesto", () => {
   it("deberia sumar el 7% adicional de impuesto para Bebidas alcohólicas en UT", () => {
   expect(calcularImpuesto(100, "UT", "Bebidas alcohólicas")).toEqual(13.65);
   });
+
   it("deberia sumar el 3% adicional de impuesto para Muebles en CA ", () => {
   expect(calcularImpuesto(100, "CA", "Muebles")).toEqual(11.25);
 });
@@ -62,6 +63,14 @@ describe("Totalizador - Descuento", () => {
 
   it("deberia calcular 15% de descuento si el monto es 30000 o mayor", () => {
     expect(calcularDescuento(30000, "Varios")).toEqual(4500);
+  });
+  //test con categorias
+  it("deberia sumar 2% adicional de descuento para Alimentos (3% base + 2% cat = 5% sobre 1000)", () => {
+  expect(calcularDescuento(1000, "Alimentos")).toEqual(50);
+  });
+
+  it("deberia aplicar 1.5% de descuento para Material de escritorio con monto menor a 1000 (0% base + 1.5% cat = 1.5% sobre 500)", () => {
+  expect(calcularDescuento(500, "Material de escritorio")).toEqual(7.5);
   });
 });
 

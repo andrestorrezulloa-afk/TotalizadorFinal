@@ -272,9 +272,31 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2cb432547897b8cee023dc39eb98b0c682ea070b",
     "commitName": "feat: Se agrego la categoria para los impuestos",
     "commitTimestamp": 1789009879202,
     "testId": 12
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 2,
+    "numTotalTests": 19,
+    "timestamp": 1789009956432,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1789010033836,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Se agrego la categoria para los descuentos",
+    "commitTimestamp": 1789010170397,
+    "testId": 13
   }
 ]

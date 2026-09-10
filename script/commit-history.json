@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2cb432547897b8cee023dc39eb98b0c682ea070b",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-10T03:11:18.000Z",
       "message": "feat: Se agrego la categoria para los impuestos",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/2cb432547897b8cee023dc39eb98b0c682ea070b"
     },
     "stats": {
       "total": 37,
@@ -243,6 +243,25 @@
     },
     "coverage": 100,
     "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-10T03:16:09.000Z",
+      "message": "feat: Se agrego la categoria para los descuentos",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 68,
+      "additions": 55,
+      "deletions": 13,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 19,
     "failed_tests": 0,
     "conclusion": "success"
   }

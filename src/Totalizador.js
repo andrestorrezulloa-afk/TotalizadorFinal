@@ -38,17 +38,30 @@ export function calcularImpuesto(precioNeto, estado, categoria = "Varios") {
   return Number((precioNeto * tasaTotal).toFixed(2));
 }
 
-export function calcularDescuento(precioNeto) {
-  let porcentaje = 0;
+export function calcularDescuento(precioNeto, categoria = "Varios") {
+  let porcentajeBase = 0;
 
-  if (precioNeto >= 30000) porcentaje = 0.15;
-  else if (precioNeto >= 10000) porcentaje = 0.10;
-  else if (precioNeto >= 7000) porcentaje = 0.07;
-  else if (precioNeto >= 3000) porcentaje = 0.05;
-  else if (precioNeto >= 1000) porcentaje = 0.03;
+  if (precioNeto >= 30000) porcentajeBase = 0.15;
+  else if (precioNeto >= 10000) porcentajeBase = 0.10;
+  else if (precioNeto >= 7000) porcentajeBase = 0.07;
+  else if (precioNeto >= 3000) porcentajeBase = 0.05;
+  else if (precioNeto >= 1000) porcentajeBase = 0.03;
 
-  const descuento = precioNeto * porcentaje;
-  return Number(descuento.toFixed(2)); // Redondea a 2 decimales y lo convierte a número
+  const descuentosPorCategoria = {
+    "Alimentos": 0.02,
+    "Bebidas alcohólicas": 0,
+    "Material de escritorio": 0.015,
+    "Muebles": 0,
+    "Electrónicos": 0.01,
+    "Vestimenta": 0,
+    "Varios": 0
+  };
+
+  const porcentajeCategoria = descuentosPorCategoria[categoria];
+  const porcentajeTotal = porcentajeBase + porcentajeCategoria;
+
+  const descuento = precioNeto * porcentajeTotal;
+  return Number(descuento.toFixed(2));
 }
 
 export function cancelarCompra(cantidadInput, precioInput, estadoSelect, resultadoDiv) {
