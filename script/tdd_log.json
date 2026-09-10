@@ -506,9 +506,47 @@
     "testId": 23
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b68ec568a2f2181bd8f4e7a6ec1998019d18c5f0",
     "commitName": "feat: Se agrego logica de negocios a peso",
     "commitTimestamp": 1789013189872,
     "testId": 23
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 1,
+    "numTotalTests": 28,
+    "timestamp": 1789013499600,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1789013516331,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 1,
+    "numTotalTests": 28,
+    "timestamp": 1789013551692,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 0,
+    "numTotalTests": 27,
+    "timestamp": 1789013586765,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: Se modifico los test para poder implementar la categoria tipos de clientes",
+    "commitTimestamp": 1789013617945,
+    "testId": 24
   }
 ]

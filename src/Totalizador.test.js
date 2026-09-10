@@ -42,35 +42,36 @@ describe("Totalizador - Impuesto", () => {
 // Descuentos 
 describe("Totalizador - Descuento", () => {
   it("deberia calcular 0 de descuento si el monto es menor a 1000", () => {
-    expect(calcularDescuento(500, "Varios")).toEqual(0);
+    expect(calcularDescuento(500, "Varios", "Normal")).toEqual(0);
   });
   
   it("deberia calcular 3% de descuento si el monto es exactamente 1000", () => {
-    expect(calcularDescuento(1000, "Varios")).toEqual(30);
+    expect(calcularDescuento(1000, "Varios", "Normal")).toEqual(30);
   });
 
   it("deberia calcular 5% de descuento si el monto es 3000", () => {
-    expect(calcularDescuento(3000, "Varios")).toEqual(150);
+    expect(calcularDescuento(3000, "Varios", "Normal")).toEqual(150);
   });
   
   it("deberia calcular 7% de descuento si el monto es 7000", () => {
-    expect(calcularDescuento(7000, "Varios")).toEqual(490);
+    expect(calcularDescuento(7000, "Varios", "Normal")).toEqual(490);
   });
 
   it("deberia calcular 10% de descuento si el monto es 10000", () => {
-    expect(calcularDescuento(10000, "Varios")).toEqual(1000);
+    expect(calcularDescuento(10000, "Varios", "Normal")).toEqual(1000);
   });
 
   it("deberia calcular 15% de descuento si el monto es 30000 o mayor", () => {
-    expect(calcularDescuento(30000, "Varios")).toEqual(4500);
+    expect(calcularDescuento(30000, "Varios", "Normal")).toEqual(4500);
   });
+
   //test con categorias
   it("deberia sumar 2% adicional de descuento para Alimentos (3% base + 2% cat = 5% sobre 1000)", () => {
-  expect(calcularDescuento(1000, "Alimentos")).toEqual(50);
+    expect(calcularDescuento(1000, "Alimentos", "Normal")).toEqual(50);
   });
 
   it("deberia aplicar 1.5% de descuento para Material de escritorio con monto menor a 1000 (0% base + 1.5% cat = 1.5% sobre 500)", () => {
-  expect(calcularDescuento(500, "Material de escritorio")).toEqual(7.5);
+    expect(calcularDescuento(500, "Material de escritorio", "Normal")).toEqual(7.5);
   });
 });
 
@@ -129,3 +130,4 @@ describe("Totalizador - Costo de Envío", () => {
     expect(calcularCostoEnvio(2, -1)).toEqual("Peso volumétrico inválido");
   });
 });
+

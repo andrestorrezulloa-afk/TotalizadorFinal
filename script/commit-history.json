@@ -437,17 +437,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "b68ec568a2f2181bd8f4e7a6ec1998019d18c5f0",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-10T04:06:29.000Z",
       "message": "feat: Se agrego logica de negocios a peso",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/b68ec568a2f2181bd8f4e7a6ec1998019d18c5f0"
     },
     "stats": {
       "total": 21,
       "additions": 16,
       "deletions": 5,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-10T04:13:37.000Z",
+      "message": "test: Se modifico los test para poder implementar la categoria tipos de clientes",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 11,
+      "deletions": 9,
       "date": "2026-09-10"
     },
     "coverage": 100,
