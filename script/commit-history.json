@@ -171,17 +171,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ba1ac9fe04746c8bdf619bef0808c0967347ae83",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-10T01:56:25.000Z",
       "message": "fix: Se arreglo la perdida de datos al confirmar la compra",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/ba1ac9fe04746c8bdf619bef0808c0967347ae83"
     },
     "stats": {
       "total": 13,
       "additions": 5,
       "deletions": 8,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-10T02:40:26.000Z",
+      "message": "style: se cambio la vista para que California este por defecto",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 3,
+      "deletions": 1,
       "date": "2026-09-10"
     },
     "coverage": 100,

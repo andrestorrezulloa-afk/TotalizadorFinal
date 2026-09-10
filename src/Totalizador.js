@@ -7,6 +7,7 @@ export function calcularPrecioNeto(cantidad, precio) {
   }
   return cantidad * precio;
 }
+
 export function calcularImpuesto(precioNeto, estado) {
   const impuestosPorEstado = {
     "UT": 0.0665, 
@@ -41,6 +42,7 @@ export function cancelarCompra(cantidadInput, precioInput, estadoSelect, resulta
   estadoSelect.value = "UT";
   resultadoDiv.innerHTML = "";
 }
+
 export function confirmarCompra() {
   return "Se confirmó la compra. ¡Gracias por su compra!";
 }

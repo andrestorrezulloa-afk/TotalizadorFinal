@@ -230,9 +230,15 @@
     "testId": 9
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ba1ac9fe04746c8bdf619bef0808c0967347ae83",
     "commitName": "fix: Se arreglo la perdida de datos al confirmar la compra",
     "commitTimestamp": 1789005386356,
     "testId": 9
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: se cambio la vista para que California este por defecto",
+    "commitTimestamp": 1789008027124,
+    "testId": 10
   }
 ]
