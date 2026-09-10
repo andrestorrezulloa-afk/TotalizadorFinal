@@ -544,9 +544,31 @@
     "testId": 24
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2b2aed5dab5c8863bcd679657f97dd9cad6b9f98",
     "commitName": "test: Se modifico los test para poder implementar la categoria tipos de clientes",
     "commitTimestamp": 1789013617945,
     "testId": 24
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 1,
+    "numTotalTests": 28,
+    "timestamp": 1789013746448,
+    "success": false,
+    "testId": 25
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1789013934918,
+    "success": true,
+    "testId": 25
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Se agrego el descuento por tipo de cliente recurrente",
+    "commitTimestamp": 1789013971127,
+    "testId": 25
   }
 ]

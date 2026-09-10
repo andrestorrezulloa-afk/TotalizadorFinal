@@ -456,12 +456,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2b2aed5dab5c8863bcd679657f97dd9cad6b9f98",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-10T04:13:37.000Z",
       "message": "test: Se modifico los test para poder implementar la categoria tipos de clientes",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/2b2aed5dab5c8863bcd679657f97dd9cad6b9f98"
     },
     "stats": {
       "total": 20,
@@ -471,6 +471,25 @@
     },
     "coverage": 100,
     "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-10T04:19:30.000Z",
+      "message": "feat: Se agrego el descuento por tipo de cliente recurrente",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 13,
+      "deletions": 3,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 28,
     "failed_tests": 0,
     "conclusion": "success"
   }

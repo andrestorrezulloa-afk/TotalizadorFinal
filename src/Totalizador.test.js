@@ -73,6 +73,10 @@ describe("Totalizador - Descuento", () => {
   it("deberia aplicar 1.5% de descuento para Material de escritorio con monto menor a 1000 (0% base + 1.5% cat = 1.5% sobre 500)", () => {
     expect(calcularDescuento(500, "Material de escritorio", "Normal")).toEqual(7.5);
   });
+  //test con categoria tipo cliente
+  it("deberia sumar $100 de descuento fijo para cliente Recurrente con Alimentos y monto mayor a 3000", () => {
+    expect(calcularDescuento(3500, "Alimentos", "Recurrente")).toEqual(345);
+  });
 });
 
 //Cancelar compra

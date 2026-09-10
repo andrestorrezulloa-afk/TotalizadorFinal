@@ -8,7 +8,7 @@ export function calcularPrecioNeto(cantidad, precio) {
   return cantidad * precio;
 }
 
-export function calcularImpuesto(precioNeto, estado, categoria = "Varios") {
+export function calcularImpuesto(precioNeto, estado, categoria) {
   const impuestosPorEstado = {
     "UT": 0.0665,
     "NV": 0.0800,
@@ -38,7 +38,7 @@ export function calcularImpuesto(precioNeto, estado, categoria = "Varios") {
   return Number((precioNeto * tasaTotal).toFixed(2));
 }
 
-export function calcularDescuento(precioNeto, categoria = "Varios") {
+export function calcularDescuento(precioNeto, categoria, tipoCliente) {
   let porcentajeBase = 0;
 
   if (precioNeto >= 30000) porcentajeBase = 0.15;
@@ -60,7 +60,13 @@ export function calcularDescuento(precioNeto, categoria = "Varios") {
   const porcentajeCategoria = descuentosPorCategoria[categoria];
   const porcentajeTotal = porcentajeBase + porcentajeCategoria;
 
-  const descuento = precioNeto * porcentajeTotal;
+  let descuento = precioNeto * porcentajeTotal;
+
+
+  if (tipoCliente === "Recurrente" && precioNeto > 3000 && categoria === "Alimentos") {
+    descuento += 100;
+  }
+
   return Number(descuento.toFixed(2));
 }
 
