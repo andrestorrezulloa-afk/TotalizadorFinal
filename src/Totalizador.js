@@ -66,6 +66,9 @@ export function calcularDescuento(precioNeto, categoria, tipoCliente) {
   if (tipoCliente === "Recurrente" && precioNeto > 3000 && categoria === "Alimentos") {
     descuento += 100;
   }
+  if (tipoCliente === "Especial" && precioNeto > 7000 && categoria === "Electrónicos") {
+    descuento += 200;
+  }
 
   return Number(descuento.toFixed(2));
 }

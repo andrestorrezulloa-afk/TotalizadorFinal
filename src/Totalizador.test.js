@@ -77,6 +77,9 @@ describe("Totalizador - Descuento", () => {
   it("deberia sumar $100 de descuento fijo para cliente Recurrente con Alimentos y monto mayor a 3000", () => {
     expect(calcularDescuento(3500, "Alimentos", "Recurrente")).toEqual(345);
   });
+  it("deberia sumar $200 de descuento fijo para cliente Especial con Electrónicos y monto mayor a 7000", () => {
+    expect(calcularDescuento(8000, "Electrónicos", "Especial")).toEqual(840);
+  });
 });
 
 //Cancelar compra
