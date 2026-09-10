@@ -1,4 +1,4 @@
-import { calcularPrecioNeto, calcularImpuesto, calcularDescuento, cancelarCompra} from "./Totalizador.js";
+import { calcularPrecioNeto, calcularImpuesto, calcularDescuento, cancelarCompra, confirmarCompra} from "./Totalizador.js";
 
 //precio neto
 describe("Totalizador - Precio Neto", () => {
@@ -68,5 +68,13 @@ describe("Totalizador - Cancelar Compra", () => {
     expect(precioInput.value).toEqual("");
     expect(estadoSelect.value).toEqual("UT"); 
     expect(resultadoDiv.innerHTML).toEqual("");
+  });
+});
+
+describe("Totalizador - Confirmar Compra", () => {
+  it("debería enviar un mensaje de confirmacion cuando se confirma la compra", () => {
+    const resultadoDiv = { innerHTML: "<p>Total: $500</p>" };
+    confirmarCompra(resultadoDiv);
+    expect(resultadoDiv.innerHTML).toEqual("Se confirmó la compra. ¡Gracias por su compra!");
   });
 });
