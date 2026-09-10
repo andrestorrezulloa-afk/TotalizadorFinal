@@ -102,9 +102,11 @@ describe("Totalizador - Confirmar Compra", () => {
 
 //Costo de envio
 describe("Totalizador - Costo de Envío", () => {
-  // Rango: 0 - 10 -> $ 0
+ 
   it("deberia calcular $0 de envio si el peso volumétrico es 10 o menos", () => {
-    // cantidad: 2, peso: 10 -> 2 * 0 = 0
     expect(calcularCostoEnvio(2, 10)).toEqual(0);
+  });
+  it("deberia calcular $3.5 por unidad de envio si el peso volumétrico está entre 11 y 20", () => {
+    expect(calcularCostoEnvio(3, 15)).toEqual(10.5);
   });
 });

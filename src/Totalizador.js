@@ -79,4 +79,5 @@ export function confirmarCompra() {
 
 export function calcularCostoEnvio(cantidad, pesoVolumetrico) {
   if (pesoVolumetrico <= 10) return 0;
+  if (pesoVolumetrico <= 20) return cantidad * 3.5;
 }

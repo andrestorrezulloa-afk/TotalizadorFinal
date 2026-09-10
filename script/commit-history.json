@@ -285,12 +285,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c4a91655a994ffc9a527fa7f10cfb4b18da50163",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-10T03:40:04.000Z",
       "message": "feat: Se agrego el coste de envio para el rango 0-10",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/c4a91655a994ffc9a527fa7f10cfb4b18da50163"
     },
     "stats": {
       "total": 40,
@@ -300,6 +300,25 @@
     },
     "coverage": 100,
     "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-10T03:41:41.000Z",
+      "message": "feat: Se agrego el coste de envio para el rango 10-20",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 5,
+      "deletions": 2,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 21,
     "failed_tests": 0,
     "conclusion": "success"
   }
