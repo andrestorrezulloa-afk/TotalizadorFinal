@@ -114,12 +114,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "05efd151b282ab89b788f165b6e619708e3ea5d2",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-09T03:58:22.000Z",
       "message": "feat: Se agrego el descuento para los demas casos",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/05efd151b282ab89b788f165b6e619708e3ea5d2"
     },
     "stats": {
       "total": 18,
@@ -129,6 +129,25 @@
     },
     "coverage": 100,
     "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-10T01:41:25.000Z",
+      "message": "feat: Cancelar compra",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 35,
+      "additions": 32,
+      "deletions": 3,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
   }

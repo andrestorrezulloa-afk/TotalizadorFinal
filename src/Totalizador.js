@@ -34,3 +34,10 @@ export function calcularDescuento(precioNeto) {
   const descuento = precioNeto * porcentaje;
   return Number(descuento.toFixed(2)); // Redondea a 2 decimales y lo convierte a número
 }
+
+export function cancelarCompra(cantidadInput, precioInput, estadoSelect, resultadoDiv) {
+  cantidadInput.value = "";
+  precioInput.value = "";
+  estadoSelect.value = "UT";
+  resultadoDiv.innerHTML = "";
+}

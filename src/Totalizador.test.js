@@ -1,4 +1,4 @@
-import { calcularPrecioNeto, calcularImpuesto, calcularDescuento} from "./Totalizador.js";
+import { calcularPrecioNeto, calcularImpuesto, calcularDescuento, cancelarCompra} from "./Totalizador.js";
 
 //precio neto
 describe("Totalizador - Precio Neto", () => {
@@ -51,5 +51,22 @@ describe("Totalizador - Descuento", () => {
 
   it("deberia calcular 15% de descuento si el monto es 30000 o mayor", () => {
     expect(calcularDescuento(30000)).toEqual(4500);
+  });
+});
+
+//Cancelar compra
+describe("Totalizador - Cancelar Compra", () => {
+  it("debería limpiar los campos de entrada y la vista de resultados", () => {
+    const cantidadInput = { value: "10" };
+    const precioInput = { value: "50" };
+    const estadoSelect = { value: "CA" };
+    const resultadoDiv = { innerHTML: "<p>Total: $500</p>" };
+
+    cancelarCompra(cantidadInput, precioInput, estadoSelect, resultadoDiv);
+
+    expect(cantidadInput.value).toEqual("");
+    expect(precioInput.value).toEqual("");
+    expect(estadoSelect.value).toEqual("UT"); 
+    expect(resultadoDiv.innerHTML).toEqual("");
   });
 });

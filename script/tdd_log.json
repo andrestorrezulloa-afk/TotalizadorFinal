@@ -156,9 +156,31 @@
     "testId": 6
   },
   {
-    "commitId": "HEAD",
+    "commitId": "05efd151b282ab89b788f165b6e619708e3ea5d2",
     "commitName": "feat: Se agrego el descuento para los demas casos",
     "commitTimestamp": 1788926303496,
     "testId": 6
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 1,
+    "numTotalTests": 14,
+    "timestamp": 1789004350726,
+    "success": false,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 0,
+    "numTotalTests": 14,
+    "timestamp": 1789004382074,
+    "success": true,
+    "testId": 7
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Cancelar compra",
+    "commitTimestamp": 1789004486566,
+    "testId": 7
   }
 ]
