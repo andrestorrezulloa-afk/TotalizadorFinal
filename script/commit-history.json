@@ -152,17 +152,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4ccc033204698abecc7b10572bffeee2bc3cdcbc",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-10T01:51:50.000Z",
       "message": "feat: Confirmar compra",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/4ccc033204698abecc7b10572bffeee2bc3cdcbc"
     },
     "stats": {
       "total": 24,
       "additions": 21,
       "deletions": 3,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-10T01:56:25.000Z",
+      "message": "fix: Se arreglo la perdida de datos al confirmar la compra",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 5,
+      "deletions": 8,
       "date": "2026-09-10"
     },
     "coverage": 100,

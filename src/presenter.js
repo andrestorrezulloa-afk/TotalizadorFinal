@@ -46,8 +46,7 @@ form.addEventListener("submit", (event) => {
 cancelarBtn.addEventListener("click", () => {
   cancelarCompra(cantidadInput, precioInput, estadoSelect, div);
 });
+
 confirmarBtn.addEventListener("click", () => {
-  div.style.color = "green";
-  div.style.fontWeight = "bold";
-  confirmarCompra(div);
+  div.innerHTML += `<p style="color: green; font-weight: bold;">${confirmarCompra()}</p>`;
 });

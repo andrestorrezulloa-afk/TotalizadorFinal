@@ -73,8 +73,6 @@ describe("Totalizador - Cancelar Compra", () => {
 
 describe("Totalizador - Confirmar Compra", () => {
   it("debería enviar un mensaje de confirmacion cuando se confirma la compra", () => {
-    const resultadoDiv = { innerHTML: "<p>Total: $500</p>" };
-    confirmarCompra(resultadoDiv);
-    expect(resultadoDiv.innerHTML).toEqual("Se confirmó la compra. ¡Gracias por su compra!");
+    expect(confirmarCompra()).toEqual("Se confirmó la compra. ¡Gracias por su compra!");
   });
 });

@@ -208,9 +208,31 @@
     "testId": 8
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4ccc033204698abecc7b10572bffeee2bc3cdcbc",
     "commitName": "feat: Confirmar compra",
     "commitTimestamp": 1789005111706,
     "testId": 8
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 1,
+    "numTotalTests": 15,
+    "timestamp": 1789005192441,
+    "success": false,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1789005208220,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Se arreglo la perdida de datos al confirmar la compra",
+    "commitTimestamp": 1789005386356,
+    "testId": 9
   }
 ]
