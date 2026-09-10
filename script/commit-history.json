@@ -399,12 +399,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "626846a7394aaa86445d7b44a4795b6eecb2d40a",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-10T03:47:26.000Z",
       "message": "feat: Se agrego el coste de envio para el rango > 200",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/626846a7394aaa86445d7b44a4795b6eecb2d40a"
     },
     "stats": {
       "total": 6,
@@ -416,5 +416,24 @@
     "test_count": 26,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-10T03:49:42.000Z",
+      "message": "fix: Se arreglo el vaciar el peso al cancelar la compra",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 3,
+      "deletions": 2,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 26,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

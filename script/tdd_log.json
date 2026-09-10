@@ -454,9 +454,15 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "626846a7394aaa86445d7b44a4795b6eecb2d40a",
     "commitName": "feat: Se agrego el coste de envio para el rango > 200",
     "commitTimestamp": 1789012047958,
     "testId": 21
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Se arreglo el vaciar el peso al cancelar la compra",
+    "commitTimestamp": 1789012183325,
+    "testId": 22
   }
 ]

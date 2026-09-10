@@ -64,11 +64,12 @@ export function calcularDescuento(precioNeto, categoria = "Varios") {
   return Number(descuento.toFixed(2));
 }
 
-export function cancelarCompra(cantidadInput, precioInput, estadoSelect, categoriaSelect, resultadoDiv) {
+export function cancelarCompra(cantidadInput, precioInput, estadoSelect, categoriaSelect, pesoInput,  resultadoDiv) {
   cantidadInput.value = "";
   precioInput.value = "";
   estadoSelect.value = "CA";
   categoriaSelect.value = "Varios";
+  pesoInput.value = "";
   resultadoDiv.innerHTML = "";
 
 }

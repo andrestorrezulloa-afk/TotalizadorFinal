@@ -50,7 +50,7 @@ form.addEventListener("submit", (event) => {
 });
 
 cancelarBtn.addEventListener("click", () => {
-  cancelarCompra(cantidadInput, precioInput, estadoSelect, categoriaSelect, div);
+  cancelarCompra(cantidadInput, precioInput, estadoSelect, categoriaSelect, pesoInput, div);
 
 });
 
