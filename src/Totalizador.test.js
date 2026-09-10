@@ -121,5 +121,7 @@ describe("Totalizador - Costo de Envío", () => {
   it("deberia calcular $8 por unidad de envio si el peso volumétrico está entre 101 y 200", () => {
     expect(calcularCostoEnvio(4, 150)).toEqual(32);
   });
-  
+  it("deberia calcular $9 por unidad de envio si el peso volumétrico es mayor a 200", () => {
+    expect(calcularCostoEnvio(2, 250)).toEqual(18);
+  });
 });
