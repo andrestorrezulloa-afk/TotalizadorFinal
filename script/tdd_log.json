@@ -236,9 +236,23 @@
     "testId": 9
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e91c9ca25e72e0fc5542d305fbabe1a4cf741809",
     "commitName": "style: se cambio la vista para que California este por defecto",
     "commitTimestamp": 1789008027124,
     "testId": 10
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1789008916816,
+    "success": true,
+    "testId": 11
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: actualizar pruebas de impuestos y descuentos para recibir categoría explícita",
+    "commitTimestamp": 1789009402649,
+    "testId": 11
   }
 ]

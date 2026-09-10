@@ -16,41 +16,44 @@ describe("Totalizador - Precio Neto", () => {
 //Impuestos
 describe("Totalizador - Impuesto", () => {
   it("deberia calcular el monto del impuesto para el estado UT (6.65%)", () => {
-    expect(calcularImpuesto(100, "UT")).toEqual(6.65);
+    expect(calcularImpuesto(100, "UT", "Varios")).toEqual(6.65);
   });
   it("deberia calcular el monto del impuesto para el estado TX (6.25%)", () => {
-    expect(calcularImpuesto(100, "TX")).toEqual(6.25);
+    expect(calcularImpuesto(100, "TX", "Varios")).toEqual(6.25);
   });
 
   it("deberia calcular el monto del impuesto para el estado CA (8.25%)", () => {
-    expect(calcularImpuesto(200, "CA")).toEqual(16.5);
+    expect(calcularImpuesto(200, "CA", "Varios")).toEqual(16.5);
   });
   it("debería retornar 'Estado inválido' si el código de estado no existe en la lista", () => {
-    expect(calcularImpuesto(100, "XX")).toEqual("Estado inválido");
+    expect(calcularImpuesto(100, "XX", "Varios")).toEqual("Estado inválido");
   });
 });
+
 // Descuentos 
 describe("Totalizador - Descuento", () => {
   it("deberia calcular 0 de descuento si el monto es menor a 1000", () => {
-    expect(calcularDescuento(500)).toEqual(0);
+    expect(calcularDescuento(500, "Varios")).toEqual(0);
   });
+  
   it("deberia calcular 3% de descuento si el monto es exactamente 1000", () => {
-    expect(calcularDescuento(1000)).toEqual(30);
+    expect(calcularDescuento(1000, "Varios")).toEqual(30);
   });
 
   it("deberia calcular 5% de descuento si el monto es 3000", () => {
-    expect(calcularDescuento(3000)).toEqual(150);
+    expect(calcularDescuento(3000, "Varios")).toEqual(150);
   });
+  
   it("deberia calcular 7% de descuento si el monto es 7000", () => {
-    expect(calcularDescuento(7000)).toEqual(490);
+    expect(calcularDescuento(7000, "Varios")).toEqual(490);
   });
 
   it("deberia calcular 10% de descuento si el monto es 10000", () => {
-    expect(calcularDescuento(10000)).toEqual(1000);
+    expect(calcularDescuento(10000, "Varios")).toEqual(1000);
   });
 
   it("deberia calcular 15% de descuento si el monto es 30000 o mayor", () => {
-    expect(calcularDescuento(30000)).toEqual(4500);
+    expect(calcularDescuento(30000, "Varios")).toEqual(4500);
   });
 });
 
@@ -71,8 +74,10 @@ describe("Totalizador - Cancelar Compra", () => {
   });
 });
 
+//Confirmar compra
 describe("Totalizador - Confirmar Compra", () => {
   it("debería enviar un mensaje de confirmacion cuando se confirma la compra", () => {
     expect(confirmarCompra()).toEqual("Se confirmó la compra. ¡Gracias por su compra!");
   });
 });
+
