@@ -1,4 +1,4 @@
-import { calcularPrecioNeto, calcularImpuesto, calcularDescuento, calcularCostoEnvio, cancelarCompra, confirmarCompra } from "./Totalizador.js";
+import { calcularPrecioNeto, calcularImpuesto, calcularDescuento, calcularCostoEnvio, confirmarCompra } from "./Totalizador.js";
 
 const cantidadInput = document.querySelector("#cantidad");
 const precioInput = document.querySelector("#precio");

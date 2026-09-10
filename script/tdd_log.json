@@ -616,9 +616,15 @@
     "testId": 28
   },
   {
-    "commitId": "HEAD",
+    "commitId": "097f0c88f6b5a0aaba938c74c3000272bf086167",
     "commitName": "refactor: mover logica de cancelar compra a presenter.js",
     "commitTimestamp": 1789015567773,
     "testId": 28
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Se quito la importacion que cancelarCompra la cual generaba un error en el script",
+    "commitTimestamp": 1789016288321,
+    "testId": 29
   }
 ]
