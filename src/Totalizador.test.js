@@ -80,13 +80,15 @@ describe("Totalizador - Cancelar Compra", () => {
     const cantidadInput = { value: "10" };
     const precioInput = { value: "50" };
     const estadoSelect = { value: "CA" };
+    const categoriaSelect = { value: "Alimentos" };
     const resultadoDiv = { innerHTML: "<p>Total: $500</p>" };
-
-    cancelarCompra(cantidadInput, precioInput, estadoSelect, resultadoDiv);
+ 
+    cancelarCompra(cantidadInput, precioInput, estadoSelect, categoriaSelect, resultadoDiv);
 
     expect(cantidadInput.value).toEqual("");
     expect(precioInput.value).toEqual("");
-    expect(estadoSelect.value).toEqual("UT"); 
+    expect(estadoSelect.value).toEqual("CA"); 
+    expect(categoriaSelect.value).toEqual("Varios");
     expect(resultadoDiv.innerHTML).toEqual("");
   });
 });

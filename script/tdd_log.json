@@ -294,9 +294,15 @@
     "testId": 13
   },
   {
-    "commitId": "HEAD",
+    "commitId": "98141624724d8c5af0358708e0f9a4177ab2ed48",
     "commitName": "feat: Se agrego la categoria para los descuentos",
     "commitTimestamp": 1789010170397,
     "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Se corrigio un error con categoria  al cancelar compra",
+    "commitTimestamp": 1789010315501,
+    "testId": 14
   }
 ]
