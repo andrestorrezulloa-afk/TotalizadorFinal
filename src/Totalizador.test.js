@@ -28,6 +28,14 @@ describe("Totalizador - Impuesto", () => {
   it("debería retornar 'Estado inválido' si el código de estado no existe en la lista", () => {
     expect(calcularImpuesto(100, "XX", "Varios")).toEqual("Estado inválido");
   });
+  //test con categorias
+  it("deberia sumar el 7% adicional de impuesto para Bebidas alcohólicas en UT", () => {
+  expect(calcularImpuesto(100, "UT", "Bebidas alcohólicas")).toEqual(13.65);
+  });
+  it("deberia sumar el 3% adicional de impuesto para Muebles en CA ", () => {
+  expect(calcularImpuesto(100, "CA", "Muebles")).toEqual(11.25);
+});
+  
 });
 
 // Descuentos 

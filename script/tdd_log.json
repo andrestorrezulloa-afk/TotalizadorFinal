@@ -250,9 +250,31 @@
     "testId": 11
   },
   {
-    "commitId": "HEAD",
+    "commitId": "88aab8415bbbd5831662719adc1661fdd4dc70bd",
     "commitName": "test: actualizar pruebas de impuestos y descuentos para recibir categoría explícita",
     "commitTimestamp": 1789009402649,
     "testId": 11
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 2,
+    "numTotalTests": 17,
+    "timestamp": 1789009720958,
+    "success": false,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1789009846723,
+    "success": true,
+    "testId": 12
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Se agrego la categoria para los impuestos",
+    "commitTimestamp": 1789009879202,
+    "testId": 12
   }
 ]

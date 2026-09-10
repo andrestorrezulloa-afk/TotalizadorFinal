@@ -8,19 +8,34 @@ export function calcularPrecioNeto(cantidad, precio) {
   return cantidad * precio;
 }
 
-export function calcularImpuesto(precioNeto, estado) {
+export function calcularImpuesto(precioNeto, estado, categoria = "Varios") {
   const impuestosPorEstado = {
-    "UT": 0.0665, 
+    "UT": 0.0665,
     "NV": 0.0800,
-    "TX": 0.0625, 
-    "AL": 0.0400, 
-    "CA": 0.0825  
+    "TX": 0.0625,
+    "AL": 0.0400,
+    "CA": 0.0825
   };
+
+  const impuestosPorCategoria = {
+    "Alimentos": 0,
+    "Bebidas alcohólicas": 0.07,
+    "Material de escritorio": 0,
+    "Muebles": 0.03,
+    "Electrónicos": 0.04,
+    "Vestimenta": 0.02,
+    "Varios": 0
+  };
+
   if (!(estado in impuestosPorEstado)) {
     return "Estado inválido";
   }
-  const tasa = impuestosPorEstado[estado] || 0;
-  return Number((precioNeto * tasa).toFixed(2));
+
+  const tasaEstado = impuestosPorEstado[estado] ;
+  const tasaCategoria = impuestosPorCategoria[categoria] ;
+  const tasaTotal = tasaEstado + tasaCategoria;
+
+  return Number((precioNeto * tasaTotal).toFixed(2));
 }
 
 export function calcularDescuento(precioNeto) {

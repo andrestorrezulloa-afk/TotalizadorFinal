@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "88aab8415bbbd5831662719adc1661fdd4dc70bd",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-10T03:03:21.000Z",
       "message": "test: actualizar pruebas de impuestos y descuentos para recibir categoría explícita",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/88aab8415bbbd5831662719adc1661fdd4dc70bd"
     },
     "stats": {
       "total": 27,
@@ -224,6 +224,25 @@
     },
     "coverage": 100,
     "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-10T03:11:18.000Z",
+      "message": "feat: Se agrego la categoria para los impuestos",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 30,
+      "deletions": 7,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 17,
     "failed_tests": 0,
     "conclusion": "success"
   }
