@@ -1,4 +1,4 @@
-import { calcularPrecioNeto, calcularImpuesto, calcularDescuento, cancelarCompra, confirmarCompra} from "./Totalizador.js";
+import { calcularPrecioNeto, calcularImpuesto, calcularDescuento, cancelarCompra, confirmarCompra, calcularCostoEnvio} from "./Totalizador.js";
 
 //precio neto
 describe("Totalizador - Precio Neto", () => {
@@ -100,3 +100,11 @@ describe("Totalizador - Confirmar Compra", () => {
   });
 });
 
+//Costo de envio
+describe("Totalizador - Costo de Envío", () => {
+  // Rango: 0 - 10 -> $ 0
+  it("deberia calcular $0 de envio si el peso volumétrico es 10 o menos", () => {
+    // cantidad: 2, peso: 10 -> 2 * 0 = 0
+    expect(calcularCostoEnvio(2, 10)).toEqual(0);
+  });
+});

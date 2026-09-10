@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "69d1f9b25e1ba9f52421910c11ae10f576a39413",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-10T03:18:34.000Z",
       "message": "fix: Se corrigio un error con categoria  al cancelar compra",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/69d1f9b25e1ba9f52421910c11ae10f576a39413"
     },
     "stats": {
       "total": 14,
@@ -281,6 +281,25 @@
     },
     "coverage": 100,
     "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-10T03:40:04.000Z",
+      "message": "feat: Se agrego el coste de envio para el rango 0-10",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 30,
+      "deletions": 10,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }

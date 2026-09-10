@@ -300,9 +300,31 @@
     "testId": 13
   },
   {
-    "commitId": "HEAD",
+    "commitId": "69d1f9b25e1ba9f52421910c11ae10f576a39413",
     "commitName": "fix: Se corrigio un error con categoria  al cancelar compra",
     "commitTimestamp": 1789010315501,
     "testId": 14
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1789011277984,
+    "success": false,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1789011363433,
+    "success": true,
+    "testId": 15
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Se agrego el coste de envio para el rango 0-10",
+    "commitTimestamp": 1789011605625,
+    "testId": 15
   }
 ]

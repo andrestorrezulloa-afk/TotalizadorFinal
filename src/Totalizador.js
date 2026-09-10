@@ -76,3 +76,7 @@ export function cancelarCompra(cantidadInput, precioInput, estadoSelect, categor
 export function confirmarCompra() {
   return "Se confirmó la compra. ¡Gracias por su compra!";
 }
+
+export function calcularCostoEnvio(cantidad, pesoVolumetrico) {
+  if (pesoVolumetrico <= 10) return 0;
+}
