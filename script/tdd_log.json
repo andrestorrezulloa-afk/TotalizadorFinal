@@ -588,9 +588,23 @@
     "testId": 26
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e9d24158d3dd36fbe0bf03923481ae0dff521d3b",
     "commitName": "feat: Se agrego el descuento por tipo de cliente especial",
     "commitTimestamp": 1789014042816,
     "testId": 26
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 0,
+    "numTotalTests": 29,
+    "timestamp": 1789014265289,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Se agrego la interfaz para tipo cliente que fue omitida en el anterior commit",
+    "commitTimestamp": 1789014301844,
+    "testId": 27
   }
 ]

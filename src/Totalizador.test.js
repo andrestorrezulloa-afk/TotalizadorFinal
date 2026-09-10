@@ -91,7 +91,8 @@ describe("Totalizador - Cancelar Compra", () => {
     const categoriaSelect = { value: "Alimentos" };
     const resultadoDiv = { innerHTML: "<p>Total: $500</p>" };
     const pesoInput = { value: "15" };
-    cancelarCompra(cantidadInput, precioInput, estadoSelect, categoriaSelect, pesoInput, resultadoDiv);
+    const clienteSelect = { value: "Normal" };
+    cancelarCompra(cantidadInput, precioInput, estadoSelect, categoriaSelect, pesoInput, clienteSelect, resultadoDiv);
 
     expect(cantidadInput.value).toEqual("");
     expect(precioInput.value).toEqual("");
@@ -99,6 +100,7 @@ describe("Totalizador - Cancelar Compra", () => {
     expect(pesoInput.value).toEqual("");
     expect(categoriaSelect.value).toEqual("Varios");
     expect(resultadoDiv.innerHTML).toEqual("");
+    expect(clienteSelect.value).toEqual("Normal");
   });
 });
 

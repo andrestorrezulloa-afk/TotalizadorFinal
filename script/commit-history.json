@@ -494,17 +494,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e9d24158d3dd36fbe0bf03923481ae0dff521d3b",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-10T04:20:41.000Z",
       "message": "feat: Se agrego el descuento por tipo de cliente especial",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/e9d24158d3dd36fbe0bf03923481ae0dff521d3b"
     },
     "stats": {
       "total": 6,
       "additions": 6,
       "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-10T04:25:00.000Z",
+      "message": "fix: Se agrego la interfaz para tipo cliente que fue omitida en el anterior commit",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 35,
+      "additions": 26,
+      "deletions": 9,
       "date": "2026-09-10"
     },
     "coverage": 100,
