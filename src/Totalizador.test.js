@@ -82,27 +82,7 @@ describe("Totalizador - Descuento", () => {
   });
 });
 
-//Cancelar compra
-describe("Totalizador - Cancelar Compra", () => {
-  it("debería limpiar los campos de entrada y la vista de resultados", () => {
-    const cantidadInput = { value: "10" };
-    const precioInput = { value: "50" };
-    const estadoSelect = { value: "CA" };
-    const categoriaSelect = { value: "Alimentos" };
-    const resultadoDiv = { innerHTML: "<p>Total: $500</p>" };
-    const pesoInput = { value: "15" };
-    const clienteSelect = { value: "Normal" };
-    cancelarCompra(cantidadInput, precioInput, estadoSelect, categoriaSelect, pesoInput, clienteSelect, resultadoDiv);
 
-    expect(cantidadInput.value).toEqual("");
-    expect(precioInput.value).toEqual("");
-    expect(estadoSelect.value).toEqual("CA"); 
-    expect(pesoInput.value).toEqual("");
-    expect(categoriaSelect.value).toEqual("Varios");
-    expect(resultadoDiv.innerHTML).toEqual("");
-    expect(clienteSelect.value).toEqual("Normal");
-  });
-});
 
 //Confirmar compra
 describe("Totalizador - Confirmar Compra", () => {

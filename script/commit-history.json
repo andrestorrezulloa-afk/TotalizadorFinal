@@ -513,12 +513,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "69cae3562154b8e29f7b8a83a60c042423c1f909",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-09-10T04:25:00.000Z",
       "message": "fix: Se agrego la interfaz para tipo cliente que fue omitida en el anterior commit",
-      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/69cae3562154b8e29f7b8a83a60c042423c1f909"
     },
     "stats": {
       "total": 35,
@@ -528,6 +528,25 @@
     },
     "coverage": 100,
     "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-09-10T04:46:06.000Z",
+      "message": "refactor: mover logica de cancelar compra a presenter.js",
+      "url": "https://github.com/andrestorrezulloa-afk/TotalizadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 45,
+      "additions": 10,
+      "deletions": 35,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 28,
     "failed_tests": 0,
     "conclusion": "success"
   }

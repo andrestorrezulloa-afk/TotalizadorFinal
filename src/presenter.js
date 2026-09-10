@@ -5,7 +5,7 @@ const precioInput = document.querySelector("#precio");
 const pesoInput = document.querySelector("#peso"); 
 const estadoSelect = document.querySelector("#estado");
 const categoriaSelect = document.querySelector("#categoria");
-const tipoClienteSelect = document.querySelector("#tipoCliente"); // Nueva selección
+const tipoClienteSelect = document.querySelector("#tipoCliente"); 
 
 const form = document.querySelector("#totalizador-form");
 const confirmarBtn = document.querySelector("#confirmar-btn");
@@ -20,7 +20,7 @@ form.addEventListener("submit", (event) => {
   const peso = Number.parseFloat(pesoInput.value); 
   const estado = estadoSelect.value;
   const categoria = categoriaSelect.value; 
-  const tipoCliente = tipoClienteSelect.value; // Capturamos el tipo de cliente
+  const tipoCliente = tipoClienteSelect.value; 
 
   const precioNeto = calcularPrecioNeto(cantidad, precio);
   if (typeof precioNeto === "string") {
@@ -28,7 +28,6 @@ form.addEventListener("submit", (event) => {
     return;
   }
   
-  // Ahora pasamos los 3 parámetros estrictamente
   const descuento = calcularDescuento(precioNeto, categoria, tipoCliente);
   const precioConDescuento = precioNeto - descuento;
   
@@ -59,7 +58,13 @@ form.addEventListener("submit", (event) => {
 });
 
 cancelarBtn.addEventListener("click", () => {
-  cancelarCompra(cantidadInput, precioInput, estadoSelect, categoriaSelect, pesoInput, tipoClienteSelect, div);
+  cantidadInput.value = "";
+  precioInput.value = "";
+  pesoInput.value = "";
+  estadoSelect.value = "CA";
+  categoriaSelect.value = "Varios";
+  tipoClienteSelect.value = "Normal";
+  div.innerHTML = "";
 });
 
 confirmarBtn.addEventListener("click", () => {

@@ -602,9 +602,23 @@
     "testId": 27
   },
   {
-    "commitId": "HEAD",
+    "commitId": "69cae3562154b8e29f7b8a83a60c042423c1f909",
     "commitName": "fix: Se agrego la interfaz para tipo cliente que fue omitida en el anterior commit",
     "commitTimestamp": 1789014301844,
     "testId": 27
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1789015530913,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: mover logica de cancelar compra a presenter.js",
+    "commitTimestamp": 1789015567773,
+    "testId": 28
   }
 ]
